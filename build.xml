@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<project name="Ant_Aufgabe_4" default="run" basedir=".">
+	<property name="main.build.dir" value="build/main" />
+	<property name="main.src.dir" value="src" />
+	<property name="test.build.dir" value="build/test" />
+	<property name="test.src.dir" value="test" />
+
+	<path id="classpath.base" />
+
+	<path id="classpath.test">
+		<pathelement location="/Users/ilkohoffmann/.p2/pool/plugins/org.junit_4.12.0.v201504281640/junit.jar" />
+		<pathelement location="/Users/ilkohoffmann/.p2/pool/plugins/org.hamcrest.core_1.3.0.v201303031735.jar" />
+		<pathelement location="${main.build.dir}"/>
+		<path refid="classpath.base" />
+	</path>
+	
+	<!-- compile & build main files -->
+	<target name="compile_main">
+		<mkdir dir="${main.build.dir}"/>
+		<javac srcdir="${main.src.dir}" destdir="${main.build.dir}" includeantruntime="false" encoding="iso-8859-1">
+			<classpath refid="classpath.base"/>
+		</javac>
+		<echo message="build of mainfiles done" />
+	</target>
+	
+	<!-- compile & build all files  -->
+	<target name="compile" depends="compile_main">
+		<mkdir dir="${test.build.dir}"/>
+		<javac srcdir="${test.src.dir}" destdir="${test.build.dir}" includeantruntime="false">
+			<classpath refid="classpath.test"/>
+		</javac>
+		<echo message="build of testfiles done" />
+	</target>
+	
+	<!-- run tests  -->
+	<target name="test" depends="compile">
+		<junit printsummary="on" haltonfailure="yes">
+			<classpath>
+				<path refid="classpath.test" />
+				<pathelement location="${test.build.dir}"/>
+			</classpath>
+			<formatter type="brief" usefile="false" />
+			<batchtest>
+				<fileset dir="${test.src.dir}" includes="**/TEST*.java" />
+			</batchtest>
+		</junit>
+		<echo message="testing done" />
+	</target>
+	
+	<!-- Test and build all files  -->
+	<!-- Build jar -->
+	<target name="run" depends="test">
+		<jar destfile="mkiebay.jar" includes="build/main/*.class" />
+		<echo message="build of jar-file done" />
+	</target>
+
+	<!-- delete all class files -->
+	<target name="clean">
+		<delete>
+			<fileset dir="${basedir}" includes="**/*.class" />
+		</delete>
+		<echo message="clean done" />
+	</target>
+</project>
