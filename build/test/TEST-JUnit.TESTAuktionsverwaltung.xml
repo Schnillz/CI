@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="ilko-wlan.wlan.schellingstrasse.net" name="JUnit.TESTAuktionsverwaltung" skipped="0" tests="3" time="0.003" timestamp="2016-12-11T17:04:47">
+  <properties>
+    <property name="ant.project.invoked-targets" value="test" />
+    <property name="main.build.dir" value="build/main" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib" />
+    <property name="java.vm.version" value="25.112-b16" />
+    <property name="ant.file.type.Ant_Aufgabe_4" value="file" />
+    <property name="ant.library.dir" value="/Users/ilkohoffmann/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib" />
+    <property name="gopherProxySet" value="false" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.9.6 compiled on June 29 2015" />
+    <property name="ant.java.version" value="1.8" />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="java.vendor.url" value="http://java.oracle.com/" />
+    <property name="path.separator" value=":" />
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="user.country" value="DE" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="sun.os.patch.level" value="unknown" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="user.dir" value="/Users/ilkohoffmann/Entwicklung/eclipse/workspaces/neon_Studium/Aufgabe_4_Ant" />
+    <property name="main.src.dir" value="src" />
+    <property name="java.runtime.version" value="1.8.0_112-b16" />
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment" />
+    <property name="basedir" value="/Users/ilkohoffmann/Entwicklung/eclipse/workspaces/neon_Studium/Aufgabe_4_Ant" />
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/endorsed" />
+    <property name="os.arch" value="x86_64" />
+    <property name="ant.project.default-target" value="run" />
+    <property name="java.io.tmpdir" value="/var/folders/5t/z1gk080x23v_97_d26qpd7140000gn/T/" />
+    <property name="ant.core.lib" value="/Users/ilkohoffmann/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar" />
+    <property name="line.separator" value="&#xa;" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="os.name" value="Mac OS X" />
+    <property name="ant.home" value="/Users/ilkohoffmann/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327" />
+    <property name="test.src.dir" value="test" />
+    <property name="ant.project.name" value="Ant_Aufgabe_4" />
+    <property name="sun.jnu.encoding" value="UTF-8" />
+    <property name="java.library.path" value="/Users/ilkohoffmann/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.:/Users/ilkohoffmann/Entwicklung/eclipse/eclipse_neon/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.osgi/389/0/.cp" />
+    <property name="java.class.version" value="52.0" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="os.version" value="10.11.6" />
+    <property name="ant.file" value="/Users/ilkohoffmann/Entwicklung/eclipse/workspaces/neon_Studium/Aufgabe_4_Ant/build.xml" />
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="user.home" value="/Users/ilkohoffmann" />
+    <property name="user.timezone" value="" />
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob" />
+    <property name="java.specification.version" value="1.8" />
+    <property name="file.encoding" value="UTF-8" />
+    <property name="java.class.path" value="/Users/ilkohoffmann/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-antlr.jar:/Users/ilkohoffmann/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-apache-bcel.jar:/Users/ilkohoffmann/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-apache-bsf.jar:/Users/ilkohoffmann/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-apache-log4j.jar:/Users/ilkohoffmann/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-apache-oro.jar:/Users/ilkohoffmann/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-apache-regexp.jar:/Users/ilkohoffmann/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-apache-resolver.jar:/Users/ilkohoffmann/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-apache-xalan2.jar:/Users/ilkohoffmann/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-commons-logging.jar:/Users/ilkohoffmann/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-commons-net.jar:/Users/ilkohoffmann/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-jai.jar:/Users/ilkohoffmann/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-javamail.jar:/Users/ilkohoffmann/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-jdepend.jar:/Users/ilkohoffmann/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-jmf.jar:/Users/ilkohoffmann/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-jsch.jar:/Users/ilkohoffmann/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit.jar:/Users/ilkohoffmann/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-junit4.jar:/Users/ilkohoffmann/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-launcher.jar:/Users/ilkohoffmann/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-netrexx.jar:/Users/ilkohoffmann/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-swing.jar:/Users/ilkohoffmann/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant-testutil.jar:/Users/ilkohoffmann/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327/lib/ant.jar:/Users/ilkohoffmann/Entwicklung/eclipse/eclipse_neon/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.osgi/61/0/.cp/lib/antdebug.jar:/Users/ilkohoffmann/Entwicklung/eclipse/eclipse_neon/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.osgi/61/0/.cp/lib/remote.jar:/Users/ilkohoffmann/Entwicklung/eclipse/eclipse_neon/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.osgi/62/0/.cp/lib/remoteAnt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/lib/tools.jar:/Users/ilkohoffmann/.p2/pool/plugins/org.eclipse.swt.cocoa.macosx.x86_64_3.105.1.v20160907-0248.jar" />
+    <property name="user.name" value="ilkohoffmann" />
+    <property name="java.vm.specification.version" value="1.8" />
+    <property name="sun.java.command" value="org.eclipse.ant.internal.launching.remote.InternalAntRunner -Dorg.eclipse.ant.core.ANT_PROCESS_ID=1481475886929 -Declipse.connect.port=52742 -Dant.home=/Users/ilkohoffmann/.p2/pool/plugins/org.apache.ant_1.9.6.v201510161327 -logger org.eclipse.ant.internal.launching.remote.logger.RemoteAntBuildLogger -inputhandler org.eclipse.ant.internal.ui.antsupport.inputhandler.ProxyInputHandler -buildfile /Users/ilkohoffmann/Entwicklung/eclipse/workspaces/neon_Studium/Aufgabe_4_Ant/build.xml test" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="user.language" value="de" />
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="java.version" value="1.8.0_112" />
+    <property name="java.ext.dirs" value="/Users/ilkohoffmann/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java" />
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home/jre/classes" />
+    <property name="java.vendor" value="Oracle Corporation" />
+    <property name="file.separator" value="/" />
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="sun.io.unicode.encoding" value="UnicodeBig" />
+    <property name="ant.file.Ant_Aufgabe_4" value="/Users/ilkohoffmann/Entwicklung/eclipse/workspaces/neon_Studium/Aufgabe_4_Ant/build.xml" />
+    <property name="test.build.dir" value="build/test" />
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="sun.cpu.isalist" value="" />
+  </properties>
+  <testcase classname="JUnit.TESTAuktionsverwaltung" name="GetGebote" time="0.001" />
+  <testcase classname="JUnit.TESTAuktionsverwaltung" name="AbbrechenNachGebot" time="0.0" />
+  <testcase classname="JUnit.TESTAuktionsverwaltung" name="DoppeltBieten" time="0.0" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

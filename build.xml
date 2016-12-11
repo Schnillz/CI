@@ -33,14 +33,14 @@
 	</target>
 	
 	<!-- run tests  -->
-	<target name="test" depends="compile" outfile="result">
+	<target name="test" depends="compile">
 		<junit printsummary="on" haltonfailure="yes">
 			<classpath>
 				<path refid="classpath.test" />
 				<pathelement location="${test.build.dir}"/>
 			</classpath>
 			<formatter type="xml"/>
-			<batchtest>
+			<batchtest todir="${test.build.dir}">
 				<fileset dir="${test.src.dir}" includes="**/TEST*.java" />
 			</batchtest>
 		</junit>
